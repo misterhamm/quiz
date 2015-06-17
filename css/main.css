@@ -4,3 +4,9 @@ body {
     background-size: cover;
     color: #FFFFFF;
 }
+
+.logo {
+    width: 40%;
+    height: auto;
+    margin: 0 30%;
+}
