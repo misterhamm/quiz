@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
+    font-family: "Oswald" "Heletica Neue" sans-serif;
 }
 
 .logo {
@@ -20,12 +21,13 @@ body {
 }
 
 
-/* Dialouge Box */
+/* Intro Box */
 .intro-container {
     background-color: rgba(0, 0, 0, 0.7);
     width: 40%;
     margin: 5rem 30% 0 30%;
     padding: 2rem 0;
+    display: none;
 }
 .intro-a {
     text-align: center;
@@ -48,4 +50,29 @@ body {
     font-size: 1.5rem;
     background-color: #FF9900;
     font-family: "Oswald" "Helvetica Neue" sans-serif;
+}
+
+/* Question Box */
+.question-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    margin: 5rem 20% 0 20%;
+    padding: 2rem 0;
+}
+.question {
+    text-align: center;
+}
+.row1 {
+    display: inline-block;
+    width: 100%;
+}
+.answer-button {
+    display: inline-block;
+
+}
+.answer-text {
+    display: inline-block;
+}
+.row2 {
+
 }
