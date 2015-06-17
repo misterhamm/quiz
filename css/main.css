@@ -62,17 +62,15 @@ body {
 .question {
     text-align: center;
 }
-.row1 {
-    display: inline-block;
+.row {
     width: 100%;
+}
+.button-cell {
+    padding-left: 12rem;
 }
 .answer-button {
     display: inline-block;
-
 }
 .answer-text {
     display: inline-block;
-}
-.row2 {
-
 }
