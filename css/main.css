@@ -18,6 +18,7 @@ body {
     text-align: left;
     margin: 0 0 0 4rem;
     font-size: 3em;
+    font-weight: 100;
 }
 
 
@@ -56,8 +57,9 @@ body {
 .question-container {
     background-color: rgba(0, 0, 0, 0.7);
     width: 60%;
-    margin: 5rem 20% 0 20%;
+    margin: 1rem 20% 0 20%;
     padding: 2rem 0;
+    display: none;
 }
 .question {
     text-align: center;
@@ -73,4 +75,40 @@ body {
 }
 .answer-text {
     display: inline-block;
+}
+
+/* Answer Feedback */
+.feedback-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    margin: 1rem 20% 0 20%;
+    padding: 2rem 0;
+    text-align: center;
+    display: none;
+}
+.right {
+    display: block;
+    margin: 0 auto;
+}
+.feedback-a {
+    margin: 1rem 0 0 0;
+    font-weight: 100;
+}
+.feedback-b {
+    margin: 0;
+    font-weight: 100;
+}
+.button-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+.next {
+    color: #000000;
+    border-style: none;
+    border-radius: 1em;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    background-color: #FF9900;
+    font-family: "Oswald" "Helvetica Neue" sans-serif;
 }
