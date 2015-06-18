@@ -54,13 +54,14 @@ body {
 }
 
 /* Question Box */
-.question1 {
+.question1,
+.question2{
     text-align: center;
     padding: 1rem 0;
-    /* display: none; */
+    display: none;
 }
-.question {
-    text-align: center;
+.question2 {
+    display: block;
 }
 table {
     width: 100%
