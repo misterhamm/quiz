@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
-    font-family: "Oswald" "Heletica Neue" sans-serif;
+    font-family: "Oswald" "Helvetica Neue" sans-serif;
 }
 
 .logo {
@@ -109,6 +109,53 @@ body {
     margin-top: 1rem;
     padding: 0 1rem;
     font-size: 1.5rem;
+    background-color: #FF9900;
+    font-family: "Oswald" "Helvetica Neue" sans-serif;
+}
+
+/* Final Score */
+.score-container-data {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    margin: 1rem 20% 0 20%;
+    padding: 1rem 0;
+    text-align: center;
+}
+.score-data {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.rank-container {
+    width: 100%;
+}
+.rank {
+    margin: 1rem 0.5rem 0 0;
+    font-weight: 100;
+    display: inline;
+}
+.rank-name {
+    margin: 1rem 0.5rem 0 0;
+    font-weight: 100;
+    display: inline;
+    color: #D89000;
+}
+.rank-desc {
+    margin: 0;
+    font-weight: 100;
+}
+.score {
+    margin: 0;
+    margin-top: 1.5rem;
+}
+.play-again {
+    float: right;
+    color: #000000;
+    border-style: none;
+    border-radius: 1em;
+    margin-top: 1rem;
+    padding: 0 1rem;
     background-color: #FF9900;
     font-family: "Oswald" "Helvetica Neue" sans-serif;
 }
