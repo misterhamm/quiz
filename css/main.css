@@ -20,16 +20,17 @@ body {
     font-size: 3em;
     font-weight: 100;
 }
-
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    margin: 1rem 20% 0 20%;
+    padding: 1rem 0;
+}
 
 /* Intro Box */
-.intro-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 40%;
-    margin: 5rem 30% 0 30%;
-    padding: 2rem 0;
-    display: none;
-}
+.intro {
+ display: none;
+ }
 .intro-a {
     text-align: center;
 }
@@ -50,16 +51,13 @@ body {
     padding: 0 1rem;
     font-size: 1.5rem;
     background-color: #FF9900;
-    font-family: "Oswald" "Helvetica Neue" sans-serif;
 }
 
 /* Question Box */
-.question-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 60%;
-    margin: 1rem 20% 0 20%;
-    padding: 2rem 0;
-    display: none;
+.question1 {
+    text-align: center;
+    padding: 1rem 0;
+    /* display: none; */
 }
 .question {
     text-align: center;
@@ -78,11 +76,7 @@ body {
 }
 
 /* Answer Feedback */
-.feedback-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 60%;
-    margin: 1rem 20% 0 20%;
-    padding: 2rem 0;
+.feedback {
     text-align: center;
     display: none;
 }
@@ -110,16 +104,12 @@ body {
     padding: 0 1rem;
     font-size: 1.5rem;
     background-color: #FF9900;
-    font-family: "Oswald" "Helvetica Neue" sans-serif;
 }
 
 /* Final Score */
-.score-container-data {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 60%;
-    margin: 1rem 20% 0 20%;
-    padding: 1rem 0;
+.data {
     text-align: center;
+    display: none;
 }
 .score-data {
     width: 45%;
@@ -150,12 +140,11 @@ body {
     margin-top: 1.5rem;
 }
 .play-again {
-    float: right;
     color: #000000;
     border-style: none;
     border-radius: 1em;
-    margin-top: 1rem;
+    margin: -1rem 0 0 18.5rem;
     padding: 0 1rem;
     background-color: #FF9900;
-    font-family: "Oswald" "Helvetica Neue" sans-serif;
+    position: absolute;
 }
