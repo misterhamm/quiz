@@ -16,14 +16,14 @@ body {
     font-family: "Press Start 2P" "Helvetica Neue" sans-serif;
     color: #DF0000;
     text-align: left;
-    margin: 0 0 0 4rem;
+    margin: -2rem 0 0 4rem;
     font-size: 3em;
     font-weight: 100;
 }
 .container {
     background-color: rgba(0, 0, 0, 0.7);
     width: 60%;
-    margin: 1rem 20% 0 20%;
+    margin: 3rem 20% 0 20%;
     padding: 1rem 0;
 }
 
@@ -62,19 +62,58 @@ body {
 .question {
     text-align: center;
 }
+table {
+    width: 100%
+}
 .row {
     width: 100%;
 }
 .button-cell {
     padding-left: 12rem;
 }
-.answer-button {
-    display: inline-block;
+td {
+    width: 50%
 }
-.answer-text {
-    display: inline-block;
+.answer-a {
+    color: #000000;
+    border-style: none;
+    border-radius: 2rem;
+    width: 90%;
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0 1rem 2rem 1rem;
+    background-color: #CC99CC;
 }
-
+.answer-b {
+    color: #000000;
+    border-style: none;
+    border-radius: 2rem;
+    width: 90%;
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0 1rem 2rem 1rem;
+    background-color: #FFCC99;
+}
+.answer-c {
+    color: #000000;
+    border-style: none;
+    border-radius: 2rem;
+    width: 90%;
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0 1rem 2rem 1rem;
+    background-color: #9999CC;
+}
+.answer-d {
+    color: #000000;
+    border-style: none;
+    border-radius: 2rem;
+    width: 90%;
+    text-align: left;
+    padding-left: 1rem;
+    margin: 0 1rem 2rem 1rem;
+    background-color: #FF9966;
+}
 /* Answer Feedback */
 .feedback {
     text-align: center;
