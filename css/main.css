@@ -29,7 +29,7 @@ body {
 
 /* Intro Box */
 .intro {
- display: block;
+ display: none;
  }
 .intro-a {
     text-align: center;
@@ -144,12 +144,19 @@ td {
 }
 
 /* Final Score */
-.data {
+.data,
+.kirk{
     text-align: center;
     display: none;
 }
 .score-data {
     width: 45%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.score-kirk {
+    width: 25%;
     height: auto;
     display: block;
     margin: 0 auto;

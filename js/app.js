@@ -8,7 +8,7 @@ window.onload = function () {
 
     // Quiz Answer Functionality
 
-    var answerQuestion = function(answerA, answerB, answerC, answerD) {
+    function answerQuestion(answerA, answerB, answerC, answerD) {
         this.answerA = answerA;
         this.answerB = answerB;
         this.answerC = answerC;
