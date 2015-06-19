@@ -7,6 +7,10 @@ window.onload = function () {
     });
 
     // Quiz Answer Functionality
+    var finalAnswers = [];
+    var correctAnswers = ['b', 'c'];
+    var total = 2;
+    var count = 0;
 
     function answerQuestion(answerA, answerB, answerC, answerD) {
         this.answerA = answerA;
@@ -16,27 +20,69 @@ window.onload = function () {
         console.log(this);
     }
 
-    question1 = new answerQuestion(0, 1, 0, 0);
-
-
-
-
-   /* document.getElementById('answer-a').addEventListener('click', function() {
+    answerA = function(){
+        finalAnswers.push('a');
+        console.log(finalAnswers)
+        count++
+        console.log(count)
         document.getElementById('question1').style.display = 'none';
         document.getElementById('question2').style.display = 'block';
-    });
-    document.getElementById('answer-b').addEventListener('click', function() {
+        return finalAnswers;
+    }
+    answerB = function(){
+        finalAnswers.push('b');
+        console.log(finalAnswers)
+        count++
+        console.log(count)
         document.getElementById('question1').style.display = 'none';
         document.getElementById('question2').style.display = 'block';
-    });
-    document.getElementById('answer-c').addEventListener('click', function() {
+        return finalAnswers;
+    }
+    answerC = function(){
+        finalAnswers.push('c');
+        console.log(finalAnswers)
+        count++
+        console.log(count)
         document.getElementById('question1').style.display = 'none';
         document.getElementById('question2').style.display = 'block';
-    });
-    document.getElementById('answer-d').addEventListener('click', function() {
+        return finalAnswers;
+    }
+    answerD = function(){
+        finalAnswers.push('d');
+        console.log(finalAnswers)
+        count++
+        console.log(count)
         document.getElementById('question1').style.display = 'none';
         document.getElementById('question2').style.display = 'block';
-    }); */
+        return finalAnswers;
+    }
+   document.getElementById('answer-a').onclick=answerA
+   document.getElementById('answer-b').onclick=answerB
+   document.getElementById('answer-c').onclick=answerC
+   document.getElementById('answer-d').onclick=answerD
+
+//   document.getElementsByClass('')[0].onclick=answerA
+
+   grade = function(){
+     if(finalAnswers[0] != correctAnswers[0]){
+       total--
+     }
+     if(finalAnswers[1] != correctAnswers[1]){
+       total--
+     }
+     if(finalAnswers[2] != correctAnswers[2]){
+       total--
+     }
+     if(finalAnswers[3] != correctAnswers[3]){
+       total--
+     }
+     return alert('You Got ' + total + ' Correct Answers');
+ }
+
+
+   document.getElementById('grade').onclick=grade
+
+
 
 
     return false;

@@ -29,7 +29,7 @@ body {
 
 /* Intro Box */
 .intro {
- display: none;
+ display: block;
  }
 .intro-a {
     text-align: center;
