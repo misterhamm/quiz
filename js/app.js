@@ -7,7 +7,21 @@ window.onload = function () {
     });
 
     // Quiz Answer Functionality
-    document.getElementById('answer-a').addEventListener('click', function() {
+
+    var answerQuestion = function(answerA, answerB, answerC, answerD) {
+        this.answerA = answerA;
+        this.answerB = answerB;
+        this.answerC = answerC;
+        this.answerD = answerD;
+        console.log(this);
+    }
+
+    question1 = new answerQuestion(0, 1, 0, 0);
+
+
+
+
+   /* document.getElementById('answer-a').addEventListener('click', function() {
         document.getElementById('question1').style.display = 'none';
         document.getElementById('question2').style.display = 'block';
     });
@@ -22,7 +36,7 @@ window.onload = function () {
     document.getElementById('answer-d').addEventListener('click', function() {
         document.getElementById('question1').style.display = 'none';
         document.getElementById('question2').style.display = 'block';
-    });
+    }); */
 
 
     return false;
