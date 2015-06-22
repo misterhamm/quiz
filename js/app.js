@@ -13,17 +13,16 @@ $(document).ready(function(){
     var count = 0;
     var total = 5;
 
-    var question1 = function() {
-        $('.answer-a1').click(function() {
-            alert('hello');
-            $(finalAnswers).append('a');
-            count++;
-            console.log(count);
-            console.log(finalAnswers);
-            $('#question1').css('display', 'none');
-            $('#question2').css('display', 'block');
-        });
-    };
+    $('.answer-a1').click(function() {
+        finalAnswers.push('a');
+        console.log(count);
+        console.log(finalAnswers);
+        $('#question1' + count).css('display', 'none');
+        count++;
+        $('#question2' + count).css('display', 'block');
+    });
+
+
 
 
 });
