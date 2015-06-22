@@ -20,46 +20,96 @@ window.onload = function () {
         console.log(this);
     }
 
-    answerA = function(){
-        finalAnswers.push('a');
-        console.log(finalAnswers)
-        count++
-        console.log(count)
-        document.getElementById('question1').style.display = 'none';
-        document.getElementById('question2').style.display = 'block';
-        return finalAnswers;
-    }
-    answerB = function(){
-        finalAnswers.push('b');
-        console.log(finalAnswers)
-        count++
-        console.log(count)
-        document.getElementById('question1').style.display = 'none';
-        document.getElementById('question2').style.display = 'block';
-        return finalAnswers;
-    }
-    answerC = function(){
-        finalAnswers.push('c');
-        console.log(finalAnswers)
-        count++
-        console.log(count)
-        document.getElementById('question1').style.display = 'none';
-        document.getElementById('question2').style.display = 'block';
-        return finalAnswers;
-    }
-    answerD = function(){
-        finalAnswers.push('d');
-        console.log(finalAnswers)
-        count++
-        console.log(count)
-        document.getElementById('question1').style.display = 'none';
-        document.getElementById('question2').style.display = 'block';
-        return finalAnswers;
-    }
-   document.getElementById('answer-a').onclick=answerA
+    document.getElementById('answer-a').onclick=answerA
    document.getElementById('answer-b').onclick=answerB
    document.getElementById('answer-c').onclick=answerC
    document.getElementById('answer-d').onclick=answerD
+
+    var question1 = (function() {
+        answerA = function(){
+            finalAnswers.push('a');
+            console.log(finalAnswers)
+            count++
+            console.log(count)
+            document.getElementById('question1').style.display = 'none';
+            document.getElementById('question2').style.display = 'block';
+            return finalAnswers;
+        }
+        answerB = function(){
+            finalAnswers.push('b');
+            console.log(finalAnswers)
+            count++
+            console.log(count)
+            document.getElementById('question1').style.display = 'none';
+            document.getElementById('question2').style.display = 'block';
+            return finalAnswers;
+        }
+        answerC = function(){
+            finalAnswers.push('c');
+            console.log(finalAnswers)
+            count++
+            console.log(count)
+            document.getElementById('question1').style.display = 'none';
+            document.getElementById('question2').style.display = 'block';
+            return finalAnswers;
+        }
+        answerD = function(){
+            finalAnswers.push('d');
+            console.log(finalAnswers)
+            count++
+            console.log(count)
+            document.getElementById('question1').style.display = 'none';
+            document.getElementById('question2').style.display = 'block';
+            return finalAnswers;
+        }
+    });
+
+    var question2 = (function() {
+        answerA = function(){
+            finalAnswers.push('a');
+            console.log(finalAnswers)
+            count++
+            console.log(count)
+            document.getElementById('question2').style.display = 'none';
+            document.getElementById('question3').style.display = 'block';
+            return finalAnswers;
+        }
+        answerB = function(){
+            finalAnswers.push('b');
+            console.log(finalAnswers)
+            count++
+            console.log(count)
+            document.getElementById('question2').style.display = 'none';
+            document.getElementById('question3').style.display = 'block';
+            return finalAnswers;
+        }
+        answerC = function(){
+            finalAnswers.push('c');
+            console.log(finalAnswers)
+            count++
+            console.log(count)
+            document.getElementById('question2').style.display = 'none';
+            document.getElementById('question3').style.display = 'block';
+            return finalAnswers;
+        }
+        answerD = function(){
+            finalAnswers.push('d');
+            console.log(finalAnswers)
+            count++
+            console.log(count)
+            document.getElementById('question2').style.display = 'none';
+            document.getElementById('question3').style.display = 'block';
+            return finalAnswers;
+        }
+    });
+
+
+
+
+
+
+
+
 
 //   document.getElementsByClass('')[0].onclick=answerA
 
@@ -80,7 +130,7 @@ window.onload = function () {
  }
 
 
-   document.getElementById('grade').onclick=grade
+//   document.getElementById('grade').onclick=grade
 
 
 
