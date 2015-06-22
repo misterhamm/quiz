@@ -20,13 +20,9 @@ window.onload = function () {
         console.log(this);
     }
 
-    document.getElementById('answer-a').onclick=answerA
-   document.getElementById('answer-b').onclick=answerB
-   document.getElementById('answer-c').onclick=answerC
-   document.getElementById('answer-d').onclick=answerD
-
-    var question1 = (function() {
-        answerA = function(){
+    var question1 = function() {
+        self = this;
+        self.answerA = function(){
             finalAnswers.push('a');
             console.log(finalAnswers)
             count++
@@ -35,7 +31,7 @@ window.onload = function () {
             document.getElementById('question2').style.display = 'block';
             return finalAnswers;
         }
-        answerB = function(){
+        self.answerB = function(){
             finalAnswers.push('b');
             console.log(finalAnswers)
             count++
@@ -44,7 +40,7 @@ window.onload = function () {
             document.getElementById('question2').style.display = 'block';
             return finalAnswers;
         }
-        answerC = function(){
+        self.answerC = function(){
             finalAnswers.push('c');
             console.log(finalAnswers)
             count++
@@ -53,7 +49,7 @@ window.onload = function () {
             document.getElementById('question2').style.display = 'block';
             return finalAnswers;
         }
-        answerD = function(){
+        self.answerD = function(){
             finalAnswers.push('d');
             console.log(finalAnswers)
             count++
@@ -62,10 +58,12 @@ window.onload = function () {
             document.getElementById('question2').style.display = 'block';
             return finalAnswers;
         }
-    });
+        return self;
+    }();
 
-    var question2 = (function() {
-        answerA = function(){
+    var question2 = function() {
+        self = this;
+        self.answerA = function(){
             finalAnswers.push('a');
             console.log(finalAnswers)
             count++
@@ -74,7 +72,7 @@ window.onload = function () {
             document.getElementById('question3').style.display = 'block';
             return finalAnswers;
         }
-        answerB = function(){
+        self.answerB = function(){
             finalAnswers.push('b');
             console.log(finalAnswers)
             count++
@@ -83,7 +81,7 @@ window.onload = function () {
             document.getElementById('question3').style.display = 'block';
             return finalAnswers;
         }
-        answerC = function(){
+        self.answerC = function(){
             finalAnswers.push('c');
             console.log(finalAnswers)
             count++
@@ -92,7 +90,7 @@ window.onload = function () {
             document.getElementById('question3').style.display = 'block';
             return finalAnswers;
         }
-        answerD = function(){
+        self.answerD = function(){
             finalAnswers.push('d');
             console.log(finalAnswers)
             count++
@@ -101,10 +99,17 @@ window.onload = function () {
             document.getElementById('question3').style.display = 'block';
             return finalAnswers;
         }
-    });
+        return self;
+    }();
 
+//console.log(question1.);
 
+    var q = question1;
 
+    document.getElementById('answer-a').onclick=q.answerA
+   document.getElementById('answer-b').onclick=q.answerB
+   document.getElementById('answer-c').onclick=q.answerC
+   document.getElementById('answer-d').onclick=q.answerD
 
 
 
