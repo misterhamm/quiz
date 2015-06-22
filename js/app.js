@@ -2,26 +2,35 @@ $(document).ready(function(){
 
     //Launch Page Button Functionality
     $('#engage').click(function() {
-        $('#intro').
+        $('#intro').css('display', 'none');
+        $('#question1').css('display', 'block');
+    });
+
+
+    //Quiz Answer Functionality
+    var finalAnswers = [];
+    var correctAnswers = ['b', 'c', 'd', 'a', 'a'];
+    var count = 0;
+    var total = 5;
+
+    var question1 = function() {
+        $('.answer-a1').click(function() {
+            alert('hello');
+            $(finalAnswers).append('a');
+            count++;
+            console.log(count);
+            console.log(finalAnswers);
+            $('#question1').css('display', 'none');
+            $('#question2').css('display', 'block');
+        });
+    };
+
+
+});
 
 
 
 
-
-
-}
-
-
-
-//
-//window.onload = function () {
-//
-//    // Launch Page Button Functionality
-//    document.getElementById('engage').addEventListener('click', function() {
-//        document.getElementById('intro').style.display = 'none';
-//        document.getElementById('question1').style.display = 'block';
-//    });
-//
 //    // Quiz Answer Functionality
 //    var finalAnswers = [];
 //    var correctAnswers = ['b', 'c', 'd', 'a', 'a'];

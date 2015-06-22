@@ -54,11 +54,7 @@ body {
 }
 
 /* Question Box */
-.question1,
-.question2,
-.question3,
-.question4,
-.question5{
+.question-container{
     text-align: center;
     padding: 1rem 0;
     display: none;
@@ -75,7 +71,7 @@ table {
 td {
     width: 50%
 }
-.answer-a {
+.a {
     color: #000000;
     border-style: none;
     border-radius: 2rem;
@@ -85,7 +81,7 @@ td {
     margin: 0 1rem 2rem 1rem;
     background-color: #CC99CC;
 }
-.answer-b {
+.b {
     color: #000000;
     border-style: none;
     border-radius: 2rem;
@@ -95,7 +91,7 @@ td {
     margin: 0 1rem 2rem 1rem;
     background-color: #FFCC99;
 }
-.answer-c {
+.c {
     color: #000000;
     border-style: none;
     border-radius: 2rem;
@@ -105,7 +101,7 @@ td {
     margin: 0 1rem 2rem 1rem;
     background-color: #9999CC;
 }
-.answer-d {
+.d {
     color: #000000;
     border-style: none;
     border-radius: 2rem;
