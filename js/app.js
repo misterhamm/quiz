@@ -8,7 +8,7 @@ $(document).ready(function(){
     });
 
 
-    //Quiz Answer Functionality
+    // Answer Key
     var answers = [
         'placeholder',
         {
@@ -21,7 +21,7 @@ $(document).ready(function(){
             a: 'Grand Nagus',
             b: 'High Priest/Priestess',
             c: 'Kai',
-            d: 'Kuvah''magh'
+            d: 'Kuvah\'magh'
         },
         {
             a: 'Nagilum',
@@ -36,23 +36,93 @@ $(document).ready(function(){
             d: 'Calamarain'
         }]
 
+    // Current Question Count
     var count = 1;
 
-    $('#current-question').html(count + '/5')
+    $('#current-question').html(count + '/5');
 
+    // Not sure what these are for yet
     var answera = $('answer-a' + count).html(answers[count].a),
         answerb = $('answer-b' + count).html(answers[count].b),
         answerc = $('answer-c' + count).html(answers[count].c),
         answerd = $('answer-d' + count).html(answers[count].d);
 
+    // Button Functionality
     var correctAnswerCount;
 
-    $('.answers').on('click', function() {
-        this = Self;
-        var type = $(Self).data('type');
-        correctAnswerCount = $('.answers [data-type='1']').length;
+    // Answer A Click
+        $('.answer-a' + count).on('click', function() {
+        correctAnswerCount = $('.answer-a' + count).data('type');
         console.log('correctAnswerCount: ', correctAnswerCount);
+        if (count < 5){
+            $('.question' + count).addClass('hide').hide();
+            count++
+            $('#current-question').html(count + '/5');
+            $('.question' + count).removeClass('hide').show();
+        }
+        else if (count == 5){
+            $('.question' + count).addClass('hide').hide();
+            $('.data').removeClass('hide').show();
+            // Fix below notification to show score
+            $('#current-question').html('Your final score was: ' + count + '/5');
+        }
     });
+
+    // Answer B Click
+    $('.answer-b' + count).on('click', function() {
+        correctAnswerCount = $('.answer-b' + count).data('type');
+        console.log('correctAnswerCount: ', correctAnswerCount);
+        if (count < 5){
+            $('.question' + count).addClass('hide').hide();
+            count++
+            $('#current-question').html(count + '/5');
+            $('.question' + count).removeClass('hide').show();
+        }
+        else if (count == 5){
+            $('.question' + count).addClass('hide').hide();
+            $('.data').removeClass('hide').show();
+            // Fix below notification to show score
+            $('#current-question').html('Your final score was: ' + count + '/5');
+        }
+    });
+
+    //Answer C Click
+    $('.answer-c' + count).on('click', function() {
+        correctAnswerCount = $('.answer-c' + count).data('type');
+        console.log('correctAnswerCount: ', correctAnswerCount);
+        if (count < 5){
+            $('.question' + count).addClass('hide').hide();
+            count++
+            $('#current-question').html(count + '/5');
+            $('.question' + count).removeClass('hide').show();
+        }
+        else if (count == 5){
+            $('.question' + count).addClass('hide').hide();
+            $('.data').removeClass('hide').show();
+            // Fix below notification to show score
+            $('#current-question').html('Your final score was: ' + count + '/5');
+        }
+    });
+
+    //Answer D Click
+    $('.answer-d' + count).on('click', function() {
+        correctAnswerCount = $('.answer-d' + count).data('type');
+        console.log('correctAnswerCount: ', correctAnswerCount);
+        if (count < 5){
+            $('.question' + count).addClass('hide').hide();
+            count++
+            $('#current-question').html(count + '/5');
+            $('.question' + count).removeClass('hide').show();
+        }
+        else if (count == 5){
+            $('.question' + count).addClass('hide').hide();
+            $('.data').removeClass('hide').show();
+            // Fix below notification to show score
+            $('#current-question').html('Your final score was: ' + count + '/5');
+        }
+    });
+
+
 
     //Question 1
    /* $('.answer-a1').on('click', function() {
