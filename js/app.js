@@ -198,25 +198,31 @@ $(document).ready(function(){
         $('.data').css('display', 'block');
     });
 
+
+    var grade = function() {
+     if(finalAnswers[0] != correctAnswers[0]){
+       total--
+     }
+     if(finalAnswers[1] != correctAnswers[1]){
+       total--
+     }
+     if(finalAnswers[2] != correctAnswers[2]){
+       total--
+     }
+     if(finalAnswers[3] != correctAnswers[3]){
+       total--
+     }
+     return alert('You Got ' + total + ' Correct Answers');
+    };
+
+
+
 });
 
 
 
-//   /*grade = function(){
-//     if(finalAnswers[0] != correctAnswers[0]){
-//       total--
-//     }
-//     if(finalAnswers[1] != correctAnswers[1]){
-//       total--
-//     }
-//     if(finalAnswers[2] != correctAnswers[2]){
-//       total--
-//     }
-//     if(finalAnswers[3] != correctAnswers[3]){
-//       total--
-//     }
-//     return alert('You Got ' + total + ' Correct Answers');
-// }*/
+
+
 //
 //
 ////   document.getElementById('grade').onclick=grade
