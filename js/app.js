@@ -41,18 +41,21 @@ $(document).ready(function(){
 
     $('#current-question').html(count + '/5');
 
-    // Not sure what these are for yet
-    var answera = $('answer-a' + count).html(answers[count].a),
+    // Dynamically fill answers
+    /*var answera = $('answer-a' + count).html(answers[count].a),
         answerb = $('answer-b' + count).html(answers[count].b),
         answerc = $('answer-c' + count).html(answers[count].c),
-        answerd = $('answer-d' + count).html(answers[count].d);
+        answerd = $('answer-d' + count).html(answers[count].d);*/
 
     // Button Functionality
-    var correctAnswerCount;
+    var correctAnswerCount = 0;
+    var answerChecker = $('.answer-a' + count).data('type');
 
-    // Answer A Click
-        $('.answer-a' + count).on('click', function() {
-        correctAnswerCount = $('.answer-a' + count).data('type');
+        // Answer A Click
+    $('.answers').on('click', '.a', function() {
+        if (answerChecker == '1'){
+            correctAnswerCount++
+        }
         console.log('correctAnswerCount: ', correctAnswerCount);
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
@@ -69,7 +72,7 @@ $(document).ready(function(){
     });
 
     // Answer B Click
-    $('.answer-b' + count).on('click', function() {
+    $('.answers').on('click', '.b', function() {
         correctAnswerCount = $('.answer-b' + count).data('type');
         console.log('correctAnswerCount: ', correctAnswerCount);
         if (count < 5){
@@ -87,7 +90,7 @@ $(document).ready(function(){
     });
 
     //Answer C Click
-    $('.answer-c' + count).on('click', function() {
+    $('.answers').on('click', '.c', function() {
         correctAnswerCount = $('.answer-c' + count).data('type');
         console.log('correctAnswerCount: ', correctAnswerCount);
         if (count < 5){
@@ -105,7 +108,7 @@ $(document).ready(function(){
     });
 
     //Answer D Click
-    $('.answer-d' + count).on('click', function() {
+    $('.answers').on('click', '.d', function() {
         correctAnswerCount = $('.answer-d' + count).data('type');
         console.log('correctAnswerCount: ', correctAnswerCount);
         if (count < 5){
