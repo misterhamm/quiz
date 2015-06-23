@@ -54,7 +54,15 @@ body {
 }
 
 /* Question Box */
-.question-container{
+.question {
+    font-weight: 100;
+}
+
+.question1,
+.question2,
+.question3,
+.question4,
+.question5{
     text-align: center;
     padding: 1rem 0;
     display: none;
