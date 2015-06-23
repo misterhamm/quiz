@@ -1,20 +1,61 @@
 $(document).ready(function(){
 
     //Launch Page Button Functionality
-    $('#engage').click(function() {
-        $('#intro').css('display', 'none');
-        $('#question1').css('display', 'block');
+    $('.engage').on('click', function() {
+        $('.intro').addClass('hide').hide();
+        $('.question1').removeClass('hide').show();
+        $('#current-question').removeClass('hide').show();
     });
 
 
     //Quiz Answer Functionality
-    var finalAnswers = [];
-    var correctAnswers = ['b', 'c', 'd', 'a', 'a'];
-    var count = 0;
-    var total = 5;
+    var answers = [
+        'placeholder',
+        {
+            a: 'Voyager',
+            b: 'The Next Generation',
+            c: 'Enterprise',
+            d: 'Deep Space Nine'
+        },
+        {
+            a: 'Grand Nagus',
+            b: 'High Priest/Priestess',
+            c: 'Kai',
+            d: 'Kuvah''magh'
+        },
+        {
+            a: 'Nagilum',
+            d: 'Degra',
+            c: 'Species 8472',
+            d: 'Armus'
+        },
+        {
+            a: 'Vidiians',
+            b: 'Cardassians',
+            c: 'Xindi',
+            d: 'Calamarain'
+        }]
+
+    var count = 1;
+
+    $('#current-question').html(count + '/5')
+
+    var answera = $('answer-a' + count).html(answers[count].a),
+        answerb = $('answer-b' + count).html(answers[count].b),
+        answerc = $('answer-c' + count).html(answers[count].c),
+        answerd = $('answer-d' + count).html(answers[count].d);
+
+    var correctAnswerCount;
+
+    $('.answers').on('click', function() {
+        this = Self;
+        var type = $(Self).data('type');
+        correctAnswerCount = $('.answers [data-type='1']').length;
+        console.log('correctAnswerCount: ', correctAnswerCount);
+    });
 
     //Question 1
-    $('.answer-a1').on('click', function() {
+   /* $('.answer-a1').on('click', function() {
         finalAnswers.push('a');
         count++;
         console.log(count);
@@ -199,20 +240,5 @@ $(document).ready(function(){
     });
 
 
-
+*/
 });
-
-
-
-
-
-//
-//
-////   document.getElementById('grade').onclick=grade
-//
-//
-//
-//
-//    return false;
-//};
-//
