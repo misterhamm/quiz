@@ -48,15 +48,17 @@ $(document).ready(function(){
         answerd = $('answer-d' + count).html(answers[count].d);*/
 
     // Button Functionality
-    var correctAnswerCount = 0;
-    var answerCheckerA = $('.a').data('type');
+    var answerChecker;
+    var score = 0;
 
         // Answer A Click
     $('.answers').on('click', '.a', function() {
-        if (answerCheckerA == '1'){
-            correctAnswerCount++
+        answerChecker = $('.answer-a' + count).data('type');
+        console.log('answerChecker: ', answerChecker);
+        if (answerChecker == 1) {
+            score++
         }
-        console.log('correctAnswerCount: ', correctAnswerCount);
+        console.log(score);
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
             count++
@@ -73,8 +75,12 @@ $(document).ready(function(){
 
     // Answer B Click
     $('.answers').on('click', '.b', function() {
-        correctAnswerCount = $('.answer-b' + count).data('type');
-        console.log('correctAnswerCount: ', correctAnswerCount);
+        answerChecker = $('.answer-b' + count).data('type');
+        console.log('answerChecker: ', answerChecker);
+        if (answerChecker == 1) {
+            score++
+        }
+        console.log(score);
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
             count++
@@ -91,8 +97,12 @@ $(document).ready(function(){
 
     //Answer C Click
     $('.answers').on('click', '.c', function() {
-        correctAnswerCount = $('.answer-c' + count).data('type');
-        console.log('correctAnswerCount: ', correctAnswerCount);
+        answerChecker = $('.answer-c' + count).data('type');
+        console.log('answerChecker: ', answerChecker);
+        if (answerChecker == 1) {
+            score++
+        }
+        console.log(score);
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
             count++
@@ -109,8 +119,12 @@ $(document).ready(function(){
 
     //Answer D Click
     $('.answers').on('click', '.d', function() {
-        correctAnswerCount = $('.answer-d' + count).data('type');
-        console.log('correctAnswerCount: ', correctAnswerCount);
+        answerChecker = $('.answer-d' + count).data('type');
+        console.log('answerChecker: ', answerChecker);
+        if (answerChecker == 1) {
+            score++
+        }
+        console.log(score);
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
             count++
