@@ -48,15 +48,12 @@ $(document).ready(function(){
     // Button Functionality
     var answerChecker;
     var score = 0;
-
-        // Answer A Click
-    $('.answers').on('click', '.a', function() {
-        answerChecker = $('.answer-a' + count).data('type');
-        console.log('answerChecker: ', answerChecker);
-        if (answerChecker == 1) {
+    var scoreIncrement = function(){
+        if (answerChecker === 1) {
             score++
         }
-        console.log(score);
+    };
+    var questionAdvance = function() {
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
             count++
@@ -64,133 +61,67 @@ $(document).ready(function(){
         }
         else if (count == 5){
             $('.question' + count).addClass('hide').hide();
-            if (score == 5) {
+            if (score === 5) {
+                console.log("score:" + score);
                 $('.data').removeClass('hide').show();
             }
-            else if (score == 4) {
+            else if (score === 4) {
+               console.log("score:"+score);
                 $('.kirk').removeClass('hide').show();
             }
-            else if (score == 3) {
+            else if (score === 3) {
+                console.log("score:" + score);
                 $('.morn').removeClass('hide').show();
             }
-            else if (score == 2) {
+            else if (score === 2) {
+                console.log("score:" + score);
                 $('.klingon').removeClass('hide').show();
             }
-            else if (score == 1) {
+            else if (score === 1) {
+                console.log("score" + score);
                 $('.dog').removeClass('hide').show();
             }
             else {
+                console.log("score" + score);
                 $('.wars').removeClass('hide').show();
             }
         }
+    };
+
+        // Answer A Click
+    $('.answers').on('click', '.a', function() {
+        answerChecker = $('.answer-a' + count).data('type');
+        console.log('answerChecker: ' + answerChecker);
+        scoreIncrement();
+        console.log(score);
+        questionAdvance();
     });
 
     // Answer B Click
     $('.answers').on('click', '.b', function() {
         answerChecker = $('.answer-b' + count).data('type');
-        console.log('answerChecker: ', answerChecker);
-        if (answerChecker == 1) {
-            score++
-        }
+        console.log('answerChecker: ' + answerChecker);
+        scoreIncrement();
         console.log(score);
-        if (count < 5){
-            $('.question' + count).addClass('hide').hide();
-            count++
-            $('.question' + count).removeClass('hide').show();
-        }
-        else if (count == 5){
-                  $('.question' + count).addClass('hide').hide();
-            if (score == 5) {
-                $('.data').removeClass('hide').show();
-            }
-            else if (score == 4) {
-                $('.kirk').removeClass('hide').show();
-            }
-            else if (score == 3) {
-                $('.morn').removeClass('hide').show();
-            }
-            else if (score == 2) {
-                $('.klingon').removeClass('hide').show();
-            }
-            else if (score == 1) {
-                $('.dog').removeClass('hide').show();
-            }
-            else {
-                $('.wars').removeClass('hide').show();
-            }
-        }
+        questionAdvance();
     });
 
     //Answer C Click
     $('.answers').on('click', '.c', function() {
         answerChecker = $('.answer-c' + count).data('type');
-        console.log('answerChecker: ', answerChecker);
-        if (answerChecker == 1) {
-            score++
-        }
+        console.log('answerChecker: ' + answerChecker);
+        scoreIncrement();
         console.log(score);
-        if (count < 5){
-            $('.question' + count).addClass('hide').hide();
-            count++
-            $('.question' + count).removeClass('hide').show();
-        }
-        else if (count == 5){
-                  $('.question' + count).addClass('hide').hide();
-            if (score == 5) {
-                $('.data').removeClass('hide').show();
-            }
-            else if (score == 4) {
-                $('.kirk').removeClass('hide').show();
-            }
-            else if (score == 3) {
-                $('.morn').removeClass('hide').show();
-            }
-            else if (score == 2) {
-                $('.klingon').removeClass('hide').show();
-            }
-            else if (score == 1) {
-                $('.dog').removeClass('hide').show();
-            }
-            else {
-                $('.wars').removeClass('hide').show();
-            }
-        }
+        questionAdvance();
     });
 
     //Answer D Click
     $('.answers').on('click', '.d', function() {
         answerChecker = $('.answer-d' + count).data('type');
-        console.log('answerChecker: ', answerChecker);
-        if (answerChecker == 1) {
-            score++
-        }
+        console.log('answerChecker: ' + answerChecker);
+        scoreIncrement();
         console.log(score);
-        if (count < 5){
-            $('.question' + count).addClass('hide').hide();
-            count++
-            $('.question' + count).removeClass('hide').show();
-        }
-        else if (count == 5){
-                  $('.question' + count).addClass('hide').hide();
-            if (score == 5) {
-                $('.data').removeClass('hide').show();
-            }
-            else if (score == 4) {
-                $('.kirk').removeClass('hide').show();
-            }
-            else if (score == 3) {
-                $('.morn').removeClass('hide').show();
-            }
-            else if (score == 2) {
-                $('.klingon').removeClass('hide').show();
-            }
-            else if (score == 1) {
-                $('.dog').removeClass('hide').show();
-            }
-            else {
-                $('.wars').removeClass('hide').show();
-            }
-        }
+        questionAdvance();
     });
 
 $('.play-again').on('click', function() {
