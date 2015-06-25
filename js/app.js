@@ -4,7 +4,6 @@ $(document).ready(function(){
     $('.engage').on('click', function() {
         $('.intro').addClass('hide').hide();
         $('.question1').removeClass('hide').show();
-        $('#current-question').removeClass('hide').show();
     });
 
 
@@ -39,7 +38,6 @@ $(document).ready(function(){
     // Current Question Count
     var count = 1;
 
-    $('#current-question').html(count + '/5');
 
     // Dynamically fill answers
     /*var answera = $('answer-a' + count).html(answers[count].a),
@@ -62,7 +60,6 @@ $(document).ready(function(){
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
             count++
-            $('#current-question').html(count + '/5');
             $('.question' + count).removeClass('hide').show();
         }
         else if (count == 5){
@@ -99,7 +96,6 @@ $(document).ready(function(){
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
             count++
-            $('#current-question').html(count + '/5');
             $('.question' + count).removeClass('hide').show();
         }
         else if (count == 5){
@@ -136,7 +132,6 @@ $(document).ready(function(){
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
             count++
-            $('#current-question').html(count + '/5');
             $('.question' + count).removeClass('hide').show();
         }
         else if (count == 5){
@@ -173,7 +168,6 @@ $(document).ready(function(){
         if (count < 5){
             $('.question' + count).addClass('hide').hide();
             count++
-            $('#current-question').html(count + '/5');
             $('.question' + count).removeClass('hide').show();
         }
         else if (count == 5){
