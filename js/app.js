@@ -49,11 +49,11 @@ $(document).ready(function(){
 
     // Button Functionality
     var correctAnswerCount = 0;
-    var answerChecker = $('.answer-a' + count).data('type');
+    var answerCheckerA = $('.a').data('type');
 
         // Answer A Click
     $('.answers').on('click', '.a', function() {
-        if (answerChecker == '1'){
+        if (answerCheckerA == '1'){
             correctAnswerCount++
         }
         console.log('correctAnswerCount: ', correctAnswerCount);
