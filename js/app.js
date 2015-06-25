@@ -196,7 +196,8 @@ $(document).ready(function(){
 $('.play-again').on('click', function() {
     $('.final').addClass('hide').hide();
     $('.intro').removeClass('hide').show();
-    score = 0
+    score = 0;
+    count = 0;
 });
 
 
