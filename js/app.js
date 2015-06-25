@@ -67,9 +67,24 @@ $(document).ready(function(){
         }
         else if (count == 5){
             $('.question' + count).addClass('hide').hide();
-            $('.data').removeClass('hide').show();
-            // Fix below notification to show score
-            $('#current-question').html('Your final score was: ' + count + '/5');
+            if (score == 5) {
+                $('.data').removeClass('hide').show();
+            }
+            else if (score == 4) {
+                $('.kirk').removeClass('hide').show();
+            }
+            else if (score == 3) {
+                $('.morn').removeClass('hide').show();
+            }
+            else if (score == 2) {
+                $('.klingon').removeClass('hide').show();
+            }
+            else if (score == 1) {
+                $('.dog').removeClass('hide').show();
+            }
+            else {
+                $('.wars').removeClass('hide').show();
+            }
         }
     });
 
@@ -88,10 +103,25 @@ $(document).ready(function(){
             $('.question' + count).removeClass('hide').show();
         }
         else if (count == 5){
-            $('.question' + count).addClass('hide').hide();
-            $('.data').removeClass('hide').show();
-            // Fix below notification to show score
-            $('#current-question').html('Your final score was: ' + count + '/5');
+                  $('.question' + count).addClass('hide').hide();
+            if (score == 5) {
+                $('.data').removeClass('hide').show();
+            }
+            else if (score == 4) {
+                $('.kirk').removeClass('hide').show();
+            }
+            else if (score == 3) {
+                $('.morn').removeClass('hide').show();
+            }
+            else if (score == 2) {
+                $('.klingon').removeClass('hide').show();
+            }
+            else if (score == 1) {
+                $('.dog').removeClass('hide').show();
+            }
+            else {
+                $('.wars').removeClass('hide').show();
+            }
         }
     });
 
@@ -110,10 +140,25 @@ $(document).ready(function(){
             $('.question' + count).removeClass('hide').show();
         }
         else if (count == 5){
-            $('.question' + count).addClass('hide').hide();
-            $('.data').removeClass('hide').show();
-            // Fix below notification to show score
-            $('#current-question').html('Your final score was: ' + count + '/5');
+                  $('.question' + count).addClass('hide').hide();
+            if (score == 5) {
+                $('.data').removeClass('hide').show();
+            }
+            else if (score == 4) {
+                $('.kirk').removeClass('hide').show();
+            }
+            else if (score == 3) {
+                $('.morn').removeClass('hide').show();
+            }
+            else if (score == 2) {
+                $('.klingon').removeClass('hide').show();
+            }
+            else if (score == 1) {
+                $('.dog').removeClass('hide').show();
+            }
+            else {
+                $('.wars').removeClass('hide').show();
+            }
         }
     });
 
@@ -132,200 +177,29 @@ $(document).ready(function(){
             $('.question' + count).removeClass('hide').show();
         }
         else if (count == 5){
-            $('.question' + count).addClass('hide').hide();
-            $('.data').removeClass('hide').show();
-            // Fix below notification to show score
-            $('#current-question').html('Your final score was: ' + count + '/5');
+                  $('.question' + count).addClass('hide').hide();
+            if (score == 5) {
+                $('.data').removeClass('hide').show();
+            }
+            else if (score == 4) {
+                $('.kirk').removeClass('hide').show();
+            }
+            else if (score == 3) {
+                $('.morn').removeClass('hide').show();
+            }
+            else if (score == 2) {
+                $('.klingon').removeClass('hide').show();
+            }
+            else if (score == 1) {
+                $('.dog').removeClass('hide').show();
+            }
+            else {
+                $('.wars').removeClass('hide').show();
+            }
         }
     });
 
 
 
-    //Question 1
-   /* $('.answer-a1').on('click', function() {
-        finalAnswers.push('a');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question1').css('display', 'none');
-        $('#question2').css('display', 'block');
-    });
 
-    $('.answer-b1').on('click', function() {
-        finalAnswers.push('b');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question1').css('display', 'none');
-        $('#question2').css('display', 'block');
-    });
-
-    $('.answer-c1').on('click', function() {
-        finalAnswers.push('c');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question1').css('display', 'none');
-        $('#question2').css('display', 'block');
-    });
-
-    $('.answer-d1').on('click', function() {
-        finalAnswers.push('d');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question1').css('display', 'none');
-        $('#question2').css('display', 'block');
-    });
-
-    //Question 2
-    $('.answer-a2').on('click', function() {
-        finalAnswers.push('a');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question2').css('display', 'none');
-        $('#question3').css('display', 'block');
-    });
-
-    $('.answer-b2').on('click', function() {
-        finalAnswers.push('b');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question2').css('display', 'none');
-        $('#question3').css('display', 'block');
-    });
-
-    $('.answer-c2').on('click', function() {
-        finalAnswers.push('c');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question2').css('display', 'none');
-        $('#question3').css('display', 'block');
-    });
-
-    $('.answer-d2').on('click', function() {
-        finalAnswers.push('d');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question2').css('display', 'none');
-        $('#question3').css('display', 'block');
-    });
-
-    //Question 3
-    $('.answer-a3').on('click', function() {
-        finalAnswers.push('a');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question3').css('display', 'none');
-        $('#question4').css('display', 'block');
-    });
-
-    $('.answer-b3').on('click', function() {
-        finalAnswers.push('b');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question3').css('display', 'none');
-        $('#question4').css('display', 'block');
-    });
-
-    $('.answer-c3').on('click', function() {
-        finalAnswers.push('c');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question3').css('display', 'none');
-        $('#question4').css('display', 'block');
-    });
-
-    $('.answer-d3').on('click', function() {
-        finalAnswers.push('d');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question3').css('display', 'none');
-        $('#question4').css('display', 'block');
-    });
-
-    //Question 4
-    $('.answer-a4').on('click', function() {
-        finalAnswers.push('a');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question4').css('display', 'none');
-        $('#question5').css('display', 'block');
-    });
-
-    $('.answer-b4').on('click', function() {
-        finalAnswers.push('b');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question4').css('display', 'none');
-        $('#question5').css('display', 'block');
-    });
-
-    $('.answer-c4').on('click', function() {
-        finalAnswers.push('c');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question4').css('display', 'none');
-        $('#question5').css('display', 'block');
-    });
-
-    $('.answer-d4').on('click', function() {
-        finalAnswers.push('d');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question4').css('display', 'none');
-        $('#question5').css('display', 'block');
-    });
-
-    //Question 5
-    $('.answer-a5').on('click', function() {
-        finalAnswers.push('a');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question5').css('display', 'none');
-        $('.data').css('display', 'block');
-    });
-
-    $('.answer-b5').on('click', function() {
-        finalAnswers.push('b');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question5').css('display', 'none');
-        $('.data').css('display', 'block');
-    });
-
-    $('.answer-c5').on('click', function() {
-        finalAnswers.push('c');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question5').css('display', 'none');
-        $('.data').css('display', 'block');
-    });
-
-    $('.answer-d5').on('click', function() {
-        finalAnswers.push('d');
-        count++;
-        console.log(count);
-        console.log(finalAnswers);
-        $('#question5').css('display', 'none');
-        $('.data').css('display', 'block');
-    });
-
-
-*/
 });
