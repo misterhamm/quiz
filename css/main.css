@@ -159,20 +159,40 @@ td {
 
 /* Final Score */
 .data,
-.kirk{
+.kirk,
+.morn,
+.klingon,
+.dog,
+.wars{
     text-align: center;
+}
+.score-data,
+.score-kirk,
+.score-morn,
+.score-klingon,
+.score-dog,
+.score-wars {
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 .score-data {
     width: 45%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
 }
 .score-kirk {
     width: 25%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+}
+.score-morn {
+    width: 50%;
+}
+.score-klingon {
+    width: 35%;
+}
+.score-dog {
+    width: 50%;
+}
+.score-wars {
+    width: 45%;
 }
 .rank-container {
     width: 100%;
